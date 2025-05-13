@@ -1,0 +1,161 @@
+@font-face {
+  font-family: 'ProsaGT';
+  src: url('ProsaGT.otf') format('opentype');
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff8f1;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 908px;
+}
+
+/* Navigation */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+  position: relative;
+}
+
+.navigation-left a,
+.navigation-right a {
+  color: #000;
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.navigation-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-container {
+  position: relative;
+}
+
+.logo-background {
+  background-color: #e6dcd3;
+  padding: 10px 30px;
+  border-radius: 20px;
+}
+
+.logo {
+  height: 50px;
+  display: block;
+}
+
+.login-button {
+  background-color: #4e9a83;
+  color: white;
+  font-weight: bold;
+  padding: 10px 24px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 4px 0px #305f50;
+  font-size: 16px;
+}
+
+.login-button:hover{
+  background-color: #1e735c;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.menu-text {
+  width: 50%;
+  padding-right: 40px;
+}
+
+.menu-text h1 {
+  font-size: 100px;
+  font-family: 'ProsaGT', sans-serif;
+  color: #3a866c;
+  margin-bottom: 24px;
+
+}
+
+.menu-text p {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Images */
+.menu-images {
+  width: 50%;
+  position: relative;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flower {
+  position: absolute;
+  width: 700px;
+  margin-left: 70px; 
+  bottom: -50px;
+  z-index: 0;
+}
+
+.avocado {
+  position: relative;
+  width: 500px;
+  margin-left: 70px;
+  z-index: 1;
+}
+
+
+/* Footer */
+.footer-container {
+  margin-top: auto;
+}
+
+.footer-bar {
+  height: 30px;
+}
+
+.footer-bar:first-child {
+  background: repeating-linear-gradient(
+    90deg,
+    #e6dcd3,
+    #e6dcd3 40px,
+    #3a866c 40px,
+    #3a866c 80px
+  );
+}
+
+.footer-bar:last-child {
+  background: repeating-linear-gradient(
+    90deg,
+    #3a866c,
+    #3a866c 40px,
+    #e6dcd3 40px,
+    #e6dcd3 80px
+  );
+}
