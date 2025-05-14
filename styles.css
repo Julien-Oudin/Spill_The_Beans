@@ -2,12 +2,16 @@
   font-family: 'ProsaGT';
   src: url('ProsaGT.otf') format('opentype');
 }
-
+html {
+  overflow-x: hidden;
+}
 
 body {
   font-family: Arial, sans-serif;
   background-color: #fff8f1;
   color: #000;
+  margin: 0;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -15,7 +19,7 @@ body {
 .menu-page {
   display: flex;
   flex-direction: column;
-  min-height: 908px;
+  min-height: 100vh;
 }
 
 /* Navigation */
@@ -42,19 +46,25 @@ body {
 }
 
 .logo-container {
-  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
 }
 
 .logo-background {
-  background-color: #e6dcd3;
-  padding: 10px 30px;
-  border-radius: 20px;
+  background-color: #f1ddd6;
+  padding: 20px 60px;
+  border-radius: 30px;
+  z-index: 1000;
 }
 
 .logo {
-  height: 50px;
+  height: 80px;
   display: block;
 }
+
 
 .login-button {
   background-color: #4e9a83;
@@ -67,12 +77,13 @@ body {
   font-size: 16px;
 }
 
-.login-button:hover{
+.login-button:hover {
   background-color: #1e735c;
 }
 
 /* Main Content */
 .main-content {
+  margin-top: 200px;
   flex: 1;
   display: flex;
   align-items: center;
@@ -96,7 +107,6 @@ body {
   font-family: 'ProsaGT', sans-serif;
   color: #3a866c;
   margin-bottom: 24px;
-
 }
 
 .menu-text p {
@@ -105,11 +115,10 @@ body {
   color: #333;
 }
 
-/* Images */
 .menu-images {
   width: 50%;
   position: relative;
-  height: 500px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -117,30 +126,168 @@ body {
 
 .flower {
   position: absolute;
-  width: 700px;
-  margin-left: 70px; 
+  width: 650px;
+  margin-left: 70px;
   bottom: -50px;
   z-index: 0;
 }
 
 .avocado {
   position: relative;
-  width: 500px;
+  width: 550px;
   margin-left: 70px;
   z-index: 1;
 }
 
+/* Scrolling Section */
+.scrolling-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-top: 200px;
+}
 
-/* Footer */
-.footer-container {
+.scroller-inner {
+  flex-wrap: nowrap;
+  clear: both;
+  display: flex;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.scroller-item {
+  animation: scroll 120s linear infinite;
+  font-size: 100px;
+  padding: 10px 0;
+  font-family: 'ProsaGT', sans-serif;
+  color: #3a866c;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Taco text */
+.taco-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 0 60px;
+  width: 100%;
+}
+
+.taco {
+  width: 600px;
+  margin-left: -300px;
+  flex-shrink: 0;
+  max-width: 100%;
+  margin-bottom: 80px;
+}
+
+.taco-text {
+  font-size: 22px;
+  margin-left: 30px;
+  max-width: 60%;
+  text-align: left;
+  padding-top: 40px;
+}
+
+/* Image slider */
+.takealookatourmenu {
+  position: absolute; 
+  top: 1855px; 
+  left: 35%;
+  width: 500px;
+}
+
+
+.image-container{
+  position: relative;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.image-wrapper{
+  width: 60vw;
+  height: 50vh; 
+  margin: 5rem auto;
+  overflow: hidden;
+}
+
+.image-wrapper-holder{
+  margin-left: 5px;
+  display: flex;
+  width: 400%;
+  height: 100%;
+}
+
+#image-slider-1{
+  background-image: url(img/Plates/chili.png);
+  width: 25%;
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#image-slider-2{
+  background-image: url(img/Plates/porc_caramel.png);
+  width: 25%;
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#image-slider-3{
+  background-image: url(img/Plates/dahl.png);
+  width: 25%;
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#image-slider-4{
+  background-image: url(img/Plates/risotto.png);
+  width: 25%;
+  background-size: contain; 
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.button-holder{
+  position:absolute;
+  left: 50%; 
+  transform: translateX(-50%); 
+  bottom: 10%; 
+}
+
+.button{
+  background-color: #f1ddd6;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.button:hover {
+  background-color: #3a866c;
+}
+
+/* Double Bar */
+.double-bar {
+  width: 100%;
   margin-top: auto;
 }
 
-.footer-bar {
+.footer-bar-first {
   height: 30px;
-}
-
-.footer-bar:first-child {
+  width: 100%;
   background: repeating-linear-gradient(
     90deg,
     #e6dcd3,
@@ -150,7 +297,9 @@ body {
   );
 }
 
-.footer-bar:last-child {
+.footer-bar-second {
+  height: 30px;
+  width: 100%;
   background: repeating-linear-gradient(
     90deg,
     #3a866c,

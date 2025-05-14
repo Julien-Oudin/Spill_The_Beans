@@ -2,23 +2,28 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spill The Beans</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <div class="page-wrapper">
+  <div class="menu-page">
     <header>
-      <nav class="navbar">
-        <div class="nav-left">
+      <nav class="navigation">
+        <div class="navigation-left">
           <a href="#">Menu</a>
         </div>
-        <div class="nav-center">
-          <div class="logo-background">
-            <img src="img/logo.png" alt="Spill The Beans Logo" class="logo" />
+
+        <div class="navigation-center">
+          <div class="logo-container">
+            <div class="logo-background">
+              <img src="img/logo.png" alt="Spill The Beans Logo" class="logo" />
+            </div>
           </div>
         </div>
-        <div class="nav-right">
+
+        <div class="navigation-right">
           <a href="#">About Us</a>
           <button class="login-button">Login</button>
         </div>
@@ -26,25 +31,70 @@
     </header>
 
     <main class="main-content">
-      <section class="hero">
-        <div class="hero-left">
-          <h1>GET THE ENERGY<br>OF POWER-PLANTS</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur<br>
-            adipiscing elit. Sed non risus. Suspendisse<br>
-            lectus tortor</p>
+      <section class="menu">
+        <div class="menu-text">
+          <h1>GET THE ENERGY<br />OF POWER-PLANTS</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur<br />
+            adipiscing elit. Sed non risus. Suspendisse lectus tortor
+          </p>
         </div>
-        <div class="hero-right">
-          <div class="flower-container">
-            <img src="img/flower.png" alt="Flower Background" class="flower-bg" />
-          </div>
-          <div class="avocado-container">
-            <img src="img/bean.png" alt="Avocado Character" class="avocado-img" />
-          </div>
+
+        <div class="menu-images">
+          <img src="img/flower.png" alt="Flower Background" class="flower" />
+          <img src="img/bean.png" alt="Avocado Character" class="avocado" />
         </div>
       </section>
     </main>
 
-    <footer class="footer-bar"></footer>
+    <div class="scrolling-section">
+      <div class="scroller-inner">
+        <span class="scroller-item">COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD !
+          COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD !
+          COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD ! COOK FOR GOOD !
+        </span>
+      </div>
+    </div>
+
+    <div class="taco-container">
+      <img src="img/taco.png" alt="Taco Character" class="taco" />
+      <div class="taco-text">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+          Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+          <br><br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+          Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+          <br><br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+          Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
+        </p>
+      </div>
+    </div>
+
+    <!-- https://www.youtube.com/watch?v=JuZABF3bEdg -->
+    <img src="img/takealookatourmenu.png" alt="Take a look at our menu" class="takealookatourmenu" />
+    <div class="image-container">
+      <div class="image-wrapper">
+        <div class="image-wrapper-holder">
+          <div id="image-slider-1" class="slide"></div>
+          <div id="image-slider-2" class="slide"></div>
+          <div id="image-slider-3" class="slide"></div>
+          <div id="image-slider-4" class="slide"></div>
+        </div>
+      </div>
+      <div class="button-holder">
+        <a href="#image-slider-1" class="button"></a>
+        <a href="#image-slider-2" class="button"></a>
+        <a href="#image-slider-3" class="button"></a>
+        <a href="#image-slider-4" class="button"></a>
+      </div>
+    </div>
+
+    <div class="double-bar">
+      <div class="footer-bar-first"></div>
+      <div class="footer-bar-second"></div>
+    </div>
   </div>
 </body>
 </html>
