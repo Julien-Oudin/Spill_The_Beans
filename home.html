@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Spill The Beans</title>
   <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" type="image/png" href="img/flower.png">
 </head>
 
 <body>
@@ -12,21 +13,20 @@
     <header>
       <nav class="navigation">
         <div class="navigation-left">
-          <a href="#">Menu</a>
+          <a href="menu.html"><button class="nav-button"><img src="img/svg/menu.svg" alt="Menu Icon" class="nav-icon">Menu</button></a>
+          <button class="nav-button"><img src="img/svg/about.svg" alt="About Icon" class="nav-icon">About Us</button>
         </div>
-
         <div class="navigation-center">
           <div class="logo-container">
             <div class="logo-background">
-              <img src="img/logo.png" alt="Spill The Beans Logo" class="logo" />
+                  <a href="home.html"><img src="img/logo.png" alt="Spill The Beans Logo" class="logo" /></a>
             </div>
           </div>
         </div>
 
-        <div class="navigation-right">
-          <a href="#">About Us</a>
-          <button class="login-button">Login</button>
-        </div>
+      <div class="navigation-right">
+        <a href="signin.html"><button class="login-button"><img src="img/svg/log.svg" alt="Login Icon" class="login-icon">Login</button></a>
+      </div>
       </nav>
     </header>
 
@@ -71,7 +71,7 @@
         </p>
       </div>
     </div>
-
+    <hr>
     <!-- https://www.youtube.com/watch?v=JuZABF3bEdg -->
     <img src="img/takealookatourmenu.png" alt="Take a look at our menu" class="takealookatourmenu" />
     <div class="image-container">
@@ -89,12 +89,40 @@
         <a href="#image-slider-3" class="button"></a>
         <a href="#image-slider-4" class="button"></a>
       </div>
+      <a href="menu.html"><button href="menu.html" class="see-menu-button">See the menu</button></a>
     </div>
 
-    <div class="double-bar">
-      <div class="footer-bar-first"></div>
-      <div class="footer-bar-second"></div>
-    </div>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>CONTACT</h3>
+          <p>julien.oudin@efrei.net</p>
+          <p>timothee.tacca@efrei.net</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>NAVIGATE</h3>
+          <a href="home.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        
+        <div class="footer-section">
+          <h3>AUTRE</h3>
+          <a href="#">Autre</a>
+          <a href="#">Autre</a>
+          <a href="#">Autre</a>
+          <a href="#">Autre</a>
+        </div>
+      </div>
+
+      <div class="double-bar">
+        <div class="footer-bar-first"></div>
+        <div class="footer-bar-second"></div>
+      </div>
+    </footer>
+
   </div>
 </body>
 </html>
