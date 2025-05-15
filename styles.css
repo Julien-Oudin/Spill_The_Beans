@@ -188,7 +188,7 @@ body {
   margin-left: -300px;
   flex-shrink: 0;
   max-width: 100%;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
 }
 
 .taco-text {
@@ -201,10 +201,12 @@ body {
 
 /* Image slider */
 .takealookatourmenu {
-  position: absolute; 
-  top: 1810px; 
-  left: 35%;
-  width: 500px;
+  position: relative;
+  margin: auto;
+  top: 254px;
+  width: min(500px, 600px);
+  justify-content: center;
+  z-index: 1;
 }
 
 
