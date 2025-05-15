@@ -8,13 +8,33 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #fff8f1;
   color: #000;
   margin: 0;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
+body.home{
+    background-color: #fff8f1;
+}
+
+body.signin{
+    background-image: url("img/sign_in_bg.png");
+}
+
+body.signup{
+  background-image: url("img/sign_up_bg.png");
+}
+
+body#sign{
+  min-height: 100vh;
+  height: 100%;
+  background-size:cover;
+  background-position: right;
+  overflow: hidden;
+}
+
 
 .menu-page {
   display: flex;
@@ -309,4 +329,16 @@ body {
     #e6dcd3 40px,
     #e6dcd3 80px
   );
+}
+
+
+.wrapper{
+  background-color: #fff8f1;
+  width: max(30%, 600px);
+  height: 100vh;
+  padding: 15px;
+  margin: 15px;
+  border-radius: 50px;
+  box-sizing:border-box;
+  text-align: center;
 }
