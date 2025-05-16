@@ -527,13 +527,13 @@ hr {
 
 .recipe-navigation {
   background-color: #f1ddd6;
-  padding: 20px 60px;
+  padding: 24px 48px;
+  position: sticky;
+  top: 0;
   z-index: 1000;
   display: flex;
-  justify-content: center; 
+  justify-content: space-between; 
   align-items: center;
-  position: sticky;
-  z-index: 1000;
 }
 
 .recipe-content {
@@ -545,7 +545,7 @@ hr {
 }
 
 .dish-image {
-  transform: translateY(-50%);
+  transform: translateY(-70%);
   width: 90%;
   height: auto;
 }
@@ -573,7 +573,7 @@ hr {
   padding: 15px 15px 15px;
   margin-top:10px;
   margin-bottom: 40px;
-  border-radius: 25px;
+  border-radius: 20px;
   background-color: #3a866c;
   
 }

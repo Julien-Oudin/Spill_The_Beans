@@ -16,6 +16,7 @@
           <a href="home.html"><button class="nav-button"><img src="img/svg/home.svg" alt="Home Icon" class="nav-icon">Home</button></a>
           <button class="nav-button"><img src="img/svg/about.svg" alt="About Icon" class="nav-icon">About Us</button>
         </div>
+        
         <div class="navigation-center">
           <div class="logo-container">
             <div class="logo-background">
@@ -23,24 +24,25 @@
             </div>
           </div>
         </div>
+        
         <div class="navigation-right">
-        <a href="signin.html"><button class="login-button"><img src="img/svg/log.svg" alt="Login Icon" class="login-icon">Login</button></a>
+          <a href="signin.html"><button class="login-button"><img src="img/svg/log.svg" alt="Login Icon" class="login-icon">Login</button></a>
         </div>
       </nav>
     </header>
 
     <main class="menu-container">
       <h1 class="menu-title">OUR MENU</h1>
+      
       <div class="menu-items">
         
         <div class="menu-item">
-
           <a href="curry.html">
-          <img src="img/Plates/curry.png" alt="Indian Vegan Curry" class="menu-item-image">
+            <img src="img/Plates/curry.png" alt="Indian Vegan Curry" class="menu-item-image">
           </a>
-            <button class="favorite-button" onclick="toggleFavorite(this)">
+          <button class="favorite-button" onclick="toggleFavorite(this)">
             <img src="img/svg/fav.svg" alt="Favorite Icon" class="favorite-icon">
-            </button>
+          </button>
           <a href="curry.html">
             <div class="menu-item-content">
               <h3 class="menu-item-title">Indian Vegan Curry</h3>
@@ -49,30 +51,33 @@
                 <span>400 kcal</span>
               </div>
             </div>
-            </a>
+          </a>
         </div>
 
         <div class="menu-item">
-          <img src="img/Plates/chili.png" alt="Chili Sin Carne" class="menu-item-image">
-            <button class="favorite-button" onclick="toggleFavorite(this)">
+          <a href="chili.html"> 
+            <img src="img/Plates/chili.png" alt="Chili Sin Carne" class="menu-item-image">
+          </a>
+          <button class="favorite-button" onclick="toggleFavorite(this)">
             <img src="img/svg/fav.svg" alt="Favorite Icon" class="favorite-icon">
-            </button>
-          <div class="menu-item-content">
-            <h3 class="menu-item-title">Chili Sin Carne</h3>
-            <div class="menu-item-meta">
-              <span>30min</span>
-              <span>300 kcal</span>
+          </button>
+          <a href="chili.html"> 
+            <div class="menu-item-content">
+              <h3 class="menu-item-title">Chili Sin Carne</h3>
+              <div class="menu-item-meta">
+                <span>30min</span>
+                <span>300 kcal</span>
+              </div>
             </div>
-          </div>
+          </a>
         </div>
-
 
         <div class="menu-item">
           <img src="img/Plates/porc_caramel.png" alt="Caramelized Vegi" class="menu-item-image">
-            <button class="favorite-button" onclick="toggleFavorite(this)">
+          <button class="favorite-button" onclick="toggleFavorite(this)">
             <img src="img/svg/fav.svg" alt="Favorite Icon" class="favorite-icon">
-            </button>
-            <div class="menu-item-content">
+          </button>
+          <div class="menu-item-content">
             <h3 class="menu-item-title">Caramelized Vegi</h3>
             <div class="menu-item-meta">
               <span>40min</span>
@@ -83,10 +88,10 @@
 
         <div class="menu-item">
           <img src="img/Plates/risotto.png" alt="isotto" class="menu-item-image">
-            <button class="favorite-button" onclick="toggleFavorite(this)">
+          <button class="favorite-button" onclick="toggleFavorite(this)">
             <img src="img/svg/fav.svg" alt="Favorite Icon" class="favorite-icon">
-            </button>
-            <div class="menu-item-content">
+          </button>
+          <div class="menu-item-content">
             <h3 class="menu-item-title">Risotto</h3>
             <div class="menu-item-meta">
               <span>35min</span>
@@ -95,12 +100,12 @@
           </div>
         </div>
 
-      <div class="menu-item">
+        <div class="menu-item">
           <img src="img/Plates/dahl.png" alt="Dalh" class="menu-item-image">
-            <button class="favorite-button" onclick="toggleFavorite(this)">
+          <button class="favorite-button" onclick="toggleFavorite(this)">
             <img src="img/svg/fav.svg" alt="Favorite Icon" class="favorite-icon">
-            </button>
-            <div class="menu-item-content">
+          </button>
+          <div class="menu-item-content">
             <h3 class="menu-item-title">Dahl</h3>
             <div class="menu-item-meta">
               <span>25min</span>
@@ -108,9 +113,9 @@
             </div>
           </div>
         </div>
-        
       </div>
     </main>
+
     <footer>
       <div class="double-bar">
         <div class="footer-bar-first"></div>
@@ -118,10 +123,11 @@
       </div>
     </footer>
 
-  <script>
-    function toggleFavorite(button) {
+    <script>
+      function toggleFavorite(button) {
         button.classList.toggle('active');
-    }
-  </script>
+      }
+    </script>
+  </div>
 </body>
 </html>
