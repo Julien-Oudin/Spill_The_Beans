@@ -266,6 +266,7 @@ hr {
   height: 50vh; 
   margin: 5rem auto;
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 .image-wrapper-holder{
@@ -321,13 +322,15 @@ hr {
   display: inline-block;
   margin: 0 0.5rem;
   margin-bottom: 20px;
+  scroll-margin-top: 0;
 }
 
 .button:hover {
   background-color: #3a866c;
 }
 
- .see-menu-button {
+
+.see-menu-button {
   display: block;
   margin: 0 auto;
   background-color: #269577;
@@ -532,7 +535,7 @@ hr {
   top: 0;
   z-index: 1000;
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
 }
 
