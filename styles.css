@@ -227,7 +227,7 @@ body {
 }
 
 .taco-text {
-  font-size: 22px;
+  font-size: 24px;
   margin-left: 30px;
   max-width: 60%;
   text-align: left;
@@ -681,4 +681,43 @@ hr {
 
 #increase-servings:hover, #decrease-servings:hover{
     cursor: pointer;
+}
+
+/* About us*/
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: -60px;
+  margin-bottom: 150px;
+}
+
+.muffin {
+  width: 650px;
+  margin-left: -1650px;
+  flex-shrink: 0;
+  max-width: 100%;
+  margin-top: -130px;
+}
+
+.about-text {
+  position: relative;
+  left : 45%;
+  width: 50%;
+  padding-left: 40px;
+  margin-top: -120px;
+}
+
+.about-text h1 {
+  font-size: 100px;
+  font-family: 'ProsaGT', sans-serif;
+  color: #3a866c;
+  margin-bottom: 24px;
+}
+
+.about-text p {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #333;
 }
