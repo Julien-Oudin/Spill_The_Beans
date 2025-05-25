@@ -107,7 +107,9 @@ body#sign{
   height:90px;
 }
 
-.login-button, .nav-button, .see-menu-button {
+
+
+.login-button, .login-page-button, .nav-button, .see-menu-button {
   background-color: #269577;
   color: white;
   font-weight: bold;
