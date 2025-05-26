@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spill The Beans</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../img/flower.png">
+</head>
+
+<body class="home">
+  <div class="menu-page">
+    <header>
+      <nav class="navigation">
+        <div class="navigation-left">
+          <a href="menu.html"><button class="nav-button"><img src="../img/svg/menu.svg" alt="Menu Icon" class="nav-icon">Menu</button></a>
+          <a href="home.html"><button class="nav-button"><img src="../img/svg/home.svg" alt="Home Icon" class="nav-icon">Home</button></a>
+        </div>
+        
+        <div class="navigation-center">
+          <div class="logo-container">
+            <div class="logo-background">
+              <a href="home.html"><img src="../img/logo.png" alt="Spill The Beans Logo" class="logo" /></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="navigation-right">
+            <button class="login-button" id="login-button">
+              <img src="../img/svg/log.svg" alt="Login Icon" class="login-icon">Login
+            </button>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-content">
+      <section class="about">
+        <div class="about-text">
+          <h1>About us</h1>
+            <p>
+            Welcome to <strong>Spill the Beans</strong> a student-made hub for tasty, easy, and fully vegetarian recipes!<br /><br />
+            We’re two computer science students from <strong>EFREI Paris</strong>, and this site started as a simple web project. But since we both love food (and coding), it quickly turned into something more: a space where we share our favorite plant-based dishes with the world.
+            All our recipes are tested in real student kitchens – meaning they’re affordable, simple to make, and full of flavor. Whether you’re vegetarian, curious, or just hungry, we hope you’ll find something you love here.<br /><br />
+            This project is about more than just food – it’s about creativity, sustainability, and proving that veggies can be the main event.Thanks for stopping by and enjoy the recipes!<br /><br />
+            – The Spill the Beans 🌱
+          </p>
+        </div>
+
+        <div class="menu-images">
+          <img src="../img/muffin.png" alt="Muffin Character" class="muffin" />
+        </div>
+      </section>
+    </main>
+
+    <h1 id="bot-title">Spill the Bot</h1>
+    <img src="../img/bot.png" alt="Bot Character" class="bot-img" />
+    <section id="chatbot">
+      <div id="chat-box">
+        <div>
+          <p id="chat"></p>
+        </div>
+      </div>
+      <div id="question-area">
+        <input type="text" id="question" name="question" value="">
+        <input type="button" id="question-submit" name="question-submit" value="Submit" onclick="fetchJSON('../json/intents.json')">
+        <input type="button" id="reset" name="reset" value="Reset" onclick="historyMessages.reset();">
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>CONTACT</h3>
+          <p>julien.oudin@efrei.net</p>
+          <p>timothee.tacca@efrei.net</p>
+        </div>
+        
+        <div class="footer-section">
+          <h3>NAVIGATE</h3>
+          <a href="home.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="aboutus.html">About Us</a>
+          <a href="#footer">Contact</a>
+        </div>
+        
+        <div class="footer-section">
+          <h3>OTHER</h3>
+          <a href="https://github.com/Julien-Oudin/Spill_The_Beans">Github</a>
+          <a href="https://www.linkedin.com/in/julien-oudin-25b125291/">Julien's LinkedIn</a>
+          <a href="https://www.linkedin.com/in/timothee-tacca/">Timothee's LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="double-bar">
+        <div class="footer-bar-first"></div>
+        <div class="footer-bar-second"></div>
+      </div>
+    </footer>
+  </div>
+      <script src="../js/main_check.js"></script>
+      <script type="text/javascript" src="../js/chatbot.js"></script>
+</body>
+</html>

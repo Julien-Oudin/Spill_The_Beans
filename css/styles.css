@@ -128,8 +128,13 @@ body#sign{
   height: 16px;
 }
 
-.login-button:hover, .nav-button:hover, .see-menu-button:hover{
+.nav-button:hover, .see-menu-button:hover{
   background-color: #3a866c;
+}
+
+.login-button:hover{
+  background-color: #e96951;
+  box-shadow: 2px 4px 0px #f03514;
 }
 
 /* Main Content */
@@ -746,4 +751,117 @@ form{
     border-radius: 15px;
     background-color: white;
     border-color: #3a866c;
+}
+
+/* About us*/
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: -60px;
+  margin-bottom: 150px;
+}
+
+.muffin {
+  width: 650px;
+  margin-left: -1650px;
+  flex-shrink: 0;
+  max-width: 100%;
+  margin-top: -130px;
+}
+
+.about-text {
+  position: relative;
+  left : 45%;
+  width: 50%;
+  padding-left: 40px;
+  margin-top: -120px;
+}
+
+.about-text h1 {
+  font-size: 100px;
+  font-family: 'ProsaGT', sans-serif;
+  color: #3a866c;
+  margin-bottom: 24px;
+}
+
+.about-text p {
+  font-size: 20px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* Chatbot */
+
+#question-area{
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+
+#question-submit{
+    background-color: #269577;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 80px;
+    margin: center;
+}
+
+#question-submit:hover {
+    background-color: #3a866c;
+}
+
+#question{
+    border-color: #3a866c;
+    padding: 8px;
+    border-radius: 6px;
+    width: 35%;
+    margin-left: 27%;
+}
+
+#reset{
+    background-color: #FF746C;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 80px;
+    margin: 3px;
+}
+
+#reset:hover{
+    background-color: #7A3734;
+}
+
+
+#chat-box{
+    border-radius: 8px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 10px;
+    overflow-y: auto; 
+}
+#chat-box > div{
+    height:400px;
+}
+
+.bot-img{
+  position:absolute;
+  margin-top: 1220px;
+  width: 30%;
+  margin-left: 78%;
+}
+
+#bot-title{
+  font-size: 80px;
+  font-family: 'ProsaGT', sans-serif;
+  color: #3a866c;
+  margin-bottom: 24px;
+  text-align: center;
 }

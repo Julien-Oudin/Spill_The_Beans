@@ -17,7 +17,7 @@ function saveUsers() {
     localStorage.setItem('users', usersString);
 }
 
-// check which page we are onz
+// check which page we are on
 const isSignUpPage = document.body.classList.contains('signup');
 const isSignInPage = document.body.classList.contains('signin');
 
@@ -62,3 +62,4 @@ form.addEventListener('submit', function(event) {
         }
     }
 });
+

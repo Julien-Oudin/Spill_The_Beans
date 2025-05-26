@@ -14,7 +14,7 @@
       <nav class="navigation">
         <div class="navigation-left">
           <a href="home.html"><button class="nav-button"><img src="../img/svg/home.svg" alt="Home Icon" class="nav-icon">Home</button></a>
-          <button class="nav-button"><img src="../img/svg/about.svg" alt="About Icon" class="nav-icon">About Us</button>
+                    <a href="aboutus.html"><button class="nav-button"><img src="../img/svg/about.svg" alt="About Icon" class="nav-icon">About Us</button></a>
         </div>
         
         <div class="navigation-center">
@@ -26,8 +26,10 @@
         </div>
         
         <div class="navigation-right">
-          <a href="signin.html"><button class="login-button" id ="login-button"><img src="../img/svg/log.svg" alt="Login Icon" class="login-icon">Login</button></a>
-        </div>
+            <button class="login-button" id="login-button">
+              <img src="../img/svg/log.svg" alt="Login Icon" class="login-icon">Login
+            </button>        
+          </div>
       </nav>
     </header>
 
@@ -73,21 +75,25 @@
         </div>
 
         <div class="menu-item">
-          <img src="../img/Plates/porc_caramel.png" alt="Caramelized Vegi" class="menu-item-image">
+          <a href="caramel_vegi.html">
+            <img src="../img/Plates/porc_caramel.png" alt="Caramelized Vegi" class="menu-item-image">
+          </a>
           <button class="favorite-button" onclick="toggleFavorite(this)">
             <img src="../img/svg/fav.svg" alt="Favorite Icon" class="favorite-icon">
           </button>
           <div class="menu-item-content">
             <h3 class="menu-item-title">Caramelized Vegi</h3>
             <div class="menu-item-meta">
-              <span>40min</span>
-              <span>600 kcal</span>
+              <span>60min</span>
+              <span>550 kcal</span>
             </div>
           </div>
         </div>
 
         <div class="menu-item">
-          <img src="../img/Plates/risotto.png" alt="isotto" class="menu-item-image">
+          <a href="risotto.html">
+          <img src="../img/Plates/risotto.png" alt="risotto" class="menu-item-image">
+          </a>
           <button class="favorite-button" onclick="toggleFavorite(this)">
             <img src="../img/svg/fav.svg" alt="Favorite Icon" class="favorite-icon">
           </button>
@@ -101,19 +107,22 @@
         </div>
 
         <div class="menu-item">
-          <img src="../img/Plates/dahl.png" alt="Dalh" class="menu-item-image">
+          <a href="dahl.html">
+            <img src="../img/Plates/dahl.png" alt="Dalh" class="menu-item-image">
+          </a>
           <button class="favorite-button" onclick="toggleFavorite(this)">
             <img src="../img/svg/fav.svg" alt="Favorite Icon" class="favorite-icon">
           </button>
           <div class="menu-item-content">
             <h3 class="menu-item-title">Dahl</h3>
             <div class="menu-item-meta">
-              <span>25min</span>
-              <span>350 kcal</span>
+              <span>35min</span>
+              <span>390 kcal</span>
             </div>
           </div>
         </div>
       </div>
+      
     </main>
 
     <footer>

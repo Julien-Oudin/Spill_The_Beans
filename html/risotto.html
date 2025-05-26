@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spill The Beans</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../img/flower.png">
+</head>
+
+<body>
+  <div class="recipe-page">
+    <header>
+      <nav class="recipe-navigation">
+        <a href="menu.html"><button class="nav-button"><img src="../img/svg/menu.svg" alt="Menu Icon" class="nav-icon">Menu</button></a>
+        <a href="home.html"><img src="../img/logo.png" alt="Spill The Beans Logo" class="logo" /></a>
+        <div class="navigation-right">
+            <button class="login-button" id="login-button">
+              <img src="../img/svg/log.svg" alt="Login Icon" class="login-icon">Login
+            </button>
+          </div>
+      </nav>
+    </header>
+    
+    <main class="recipe-content">
+      <div class="recipe-image">
+        <img src="../img/Plates/risotto.png" alt="Risotto" class="dish-image" />
+      </div>
+      
+      <section class="recipe-card">
+        <div class="recipe-details">
+          <h1>Simple Risotto</h1>
+          <p class="time-calories">40min - 480 kcal/per person</p>
+
+          <div class="servings">
+            <input type="button" id="decrease-servings" onclick="removeServings()" value="-">
+            <input type="text" value="1" id="servings-quantity">
+            <input type="button" id="increase-servings" onclick="addServings()" value="+">
+          </div>
+
+          <div class="ratings">
+            <p>dishes</p>
+            <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+            <p>difficulty</p>
+            <div class="bar"><div class="fill" style="width: 50%;"></div></div>
+            <p>price</p>
+            <div class="bar"><div class="fill" style="width: 60%;"></div></div>
+          </div>
+          
+          <hr>
+          
+          <ul class="ingredients">
+            <li><span class="dot rice"></span> <p class="servings-ingredients"></p> 50g Arborio rice</li>
+            <li><span class="dot onion"></span> <p class="servings-ingredients"></p> small onion, finely chopped</li>
+            <li><span class="dot garlic"></span> <p class="servings-ingredients"></p> cloves garlic, minced</li>
+            <li><span class="dot broth"></span> <p class="servings-ingredients"></p> 00ml vegetable broth (hot)</li>
+            <li><span class="dot cheese"></span> <p class="servings-ingredients"></p> 0g grated Parmesan cheese</li>
+            <li><span class="dot butter"></span> <p class="servings-ingredients"></p> tbsp butter</li>
+            <li><span class="dot oil"></span> <p class="servings-ingredients"></p> tbsp olive oil</li>
+            <li><span class="dot salt"></span> Salt & pepper to taste</li>
+          </ul>
+          
+          <hr>
+          
+          <ol class="steps">
+            <li>Heat olive oil and butter in a large pan over medium heat.</li>
+            <li>Add chopped onion and cook until translucent, about 3 minutes.</li>
+            <li>Stir in garlic and Arborio rice. Cook for 1–2 minutes until rice edges look slightly translucent.</li>
+            <li>Add a ladle of hot vegetable broth and stir until absorbed.</li>
+            <li>Continue adding broth, one ladle at a time, stirring constantly until absorbed before adding the next.</li>
+            <li>Repeat for about 18–20 minutes, until rice is creamy and tender with a slight bite.</li>
+            <li>Turn off the heat and stir in grated Parmesan cheese. Season with salt and pepper to taste.</li>
+            <li>Let rest for 1 minute, then serve warm with optional garnish (extra cheese or herbs).</li>
+            <li>Enjoy!</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="double-bar">
+        <div class="footer-bar-first"></div>
+        <div class="footer-bar-second"></div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="../js/main_check.js"></script>
+</body>
+</html>

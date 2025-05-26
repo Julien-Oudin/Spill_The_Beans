@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spill The Beans</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../img/flower.png">
+</head>
+
+<body>
+  <div class="recipe-page">
+    <header>
+      <nav class="recipe-navigation">
+        <a href="menu.html"><button class="nav-button"><img src="../img/svg/menu.svg" alt="Menu Icon" class="nav-icon">Menu</button></a>
+        <a href="home.html"><img src="../img/logo.png" alt="Spill The Beans Logo" class="logo" /></a>
+        <div class="navigation-right">
+            <button class="login-button" id="login-button">
+              <img src="../img/svg/log.svg" alt="Login Icon" class="login-icon">Login
+            </button>
+        </div>
+      </nav>
+    </header>
+    
+    <main class="recipe-content">
+      <div class="recipe-image">
+        <img src="../img/Plates/dahl.png" alt="Dahl" class="dish-image" />
+      </div>
+      
+      <section class="recipe-card">
+        <div class="recipe-details">
+          <h1>Simple Lentil Dahl</h1>
+          <p class="time-calories">35min - 390 kcal/per person</p>
+
+          <div class="servings">
+            <input type="button" id="decrease-servings" onclick="removeServings()" value="-">
+            <input type="text" value="1" id="servings-quantity">
+            <input type="button" id="increase-servings" onclick="addServings()" value="+">
+          </div>
+
+          <div class="ratings">
+            <p>dishes</p>
+            <div class="bar"><div class="fill" style="width: 60%;"></div></div>
+            <p>difficulty</p>
+            <div class="bar"><div class="fill" style="width: 40%;"></div></div>
+            <p>price</p>
+            <div class="bar"><div class="fill" style="width: 30%;"></div></div>
+          </div>
+          
+          <hr>
+          
+          <ul class="ingredients">
+            <li><span class="dot lentils"></span> <p class="servings-ingredients"></p> 50g red lentils</li>
+            <li><span class="dot onion"></span> <p class="servings-ingredients"></p>  onion, chopped</li>
+            <li><span class="dot garlic"></span> <p class="servings-ingredients"></p>  cloves garlic, minced</li>
+            <li><span class="dot ginger"></span> <p class="servings-ingredients"></p>  tsp fresh grated ginger</li>
+            <li><span class="dot tomato"></span> <p class="servings-ingredients"></p>  tomato, diced</li>
+            <li><span class="dot coconut-milk"></span> <p class="servings-ingredients"></p> 00ml coconut milk</li>
+            <li><span class="dot cumin"></span> <p class="servings-ingredients"></p>  tsp cumin</li>
+            <li><span class="dot turmeric"></span> <p class="servings-ingredients"></p>  tsp turmeric</li>
+            <li><span class="dot chili"></span> <p class="servings-ingredients"></p> tsp chili flakes (optional)</li>
+            <li><span class="dot salt"></span> Salt & pepper to taste</li>
+          </ul>
+          
+          <hr>
+          
+          <ol class="steps">
+            <li>Rinse red lentils under cold water until water runs clear. Set aside.</li>
+            <li>Heat oil in a pan and sauté chopped onion until soft and golden.</li>
+            <li>Add garlic, ginger, cumin, turmeric, and chili flakes. Stir for 1 minute until fragrant.</li>
+            <li>Add diced tomato and cook for 2–3 minutes until softened.</li>
+            <li>Stir in the lentils, coconut milk, and 400ml of water. Bring to a gentle boil.</li>
+            <li>Reduce heat and simmer uncovered for about 20–25 minutes, stirring occasionally.</li>
+            <li>Once lentils are soft and creamy, season with salt and pepper to taste.</li>
+            <li>Serve warm with rice, naan, or as is. Garnish with fresh cilantro if desired.</li>
+            <li>Enjoy!</li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="double-bar">
+        <div class="footer-bar-first"></div>
+        <div class="footer-bar-second"></div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="../js/main_check.js"></script>
+</body>
+</html>

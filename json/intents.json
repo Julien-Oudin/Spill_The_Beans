@@ -1,0 +1,74 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hello", "Hi", "Hey", "Good day", "Yo", "What's up", "Howdy", "Greetings"],
+      "responses": ["Hey there! What would you like to explore today?", "Hi! Let me know if you want to dive into any of our delicious options.", "Hello! Looking for something tasty today?", "Good to see you! Let’s get started."]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "Goodbye", "See you", "I'm done", "Catch you later", "Talk to you soon", "See ya", "I'm off"],
+      "responses": ["Take care and come back soon!", "Bye-bye! Always happy to help again.", "See you next time!", "Hope you found what you were looking for!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "Appreciate it", "Much appreciated", "Thx", "Thanks a lot", "Cheers", "Many thanks"],
+      "responses": ["You're very welcome!", "Glad to help!", "Anytime!", "Happy to be of service."]
+    },
+    {
+      "tag": "recipe_list",
+      "patterns": ["What recipes do you have?", "List your recipes", "What can I cook?", "Options", "Recipe list", "Menu", "Choices", "Available dishes"],
+      "responses": ["Here’s what we’ve got lined up for you: curry, chili, caramelized vegi, risotto, and dahl.", "These are currently available: curry, chili, caramelized vegi, risotto, dahl.", "Our options include: curry, chili, caramelized vegi, risotto, and dahl.", "Pick from these great choices: curry, chili, caramelized vegi, risotto, dahl."]
+    },
+    {
+      "tag": "vegan_curry",
+      "patterns": ["Tell me about vegan curry", "Vegan curry", "curry", "How to make curry", "Curry?", "Give me curry", "Show curry", "I'm interested in curry"],
+      "responses": ["Curry? Got it!", "You picked curry. Great choice!", "Curry selected. Let’s get to it!", "Alright, we’re on curry now."]
+    },
+    {
+      "tag": "chili_sin_carne",
+      "patterns": ["What's chili sin carne?", "chili sin carne", "chili", "Vegetarian chili", "Chili?", "Tell me about chili", "Show chili", "Give me chili"],
+      "responses": ["Chili it is!", "Nice pick with chili!", "You're going with chili—excellent!", "Chili selected. Ready when you are."]
+    },
+    {
+      "tag": "caramelized_vegi",
+      "patterns": ["What is caramelized vegi?", "caramelized vegi", "Sweet vegi", "Vegi?", "Caramel veg", "Tell me about vegi", "Show vegi", "Give me vegi"],
+      "responses": ["Vegi coming up!", "You chose caramelized vegi. Let’s go!", "Vegi is a sweet pick—literally!", "Okay, we’re on caramelized vegi now."]
+    },
+    {
+      "tag": "risotto",
+      "patterns": ["Risotto?", "How to make risotto", "Gluten-free risotto", "risotto", "Tell me about risotto", "Show risotto", "Give me risotto", "Interested in risotto"],
+      "responses": ["Risotto selected!", "That’s a creamy choice—risotto it is!", "All set for risotto!", "You’re going with risotto. Great!"]
+    },
+    {
+      "tag": "dahl",
+      "patterns": ["dahl", "What is dahl?", "Lentil dahl", "Tell me about dahl", "Dahl?", "Show dahl", "Give me dahl", "Interested in dahl"],
+      "responses": ["Dahl on the way!", "You’ve chosen dahl—excellent.", "Let’s check out dahl!", "Got it—dahl it is."]
+    },
+    {
+      "tag": "cooking_times",
+      "patterns": ["How long to cook?", "Preparation times", "Cooking durations", "Time to make", "Which is quickest?", "Cook time?", "How long does each take?", "Fastest one?"],
+      "responses": ["Each dish has a different pace—some are quicker, others more rewarding with time.", "Preparation time varies, but all are worth it!", "Some are fast, others take patience. Want help choosing?", "Timing is key—just let me know which one you're thinking of."]
+    },
+    {
+      "tag": "ingredient_questions",
+      "patterns": ["What's in curry?", "Ingredients for chili", "What’s in dahl?", "Risotto components", "Vegi ingredients", "What’s in that?", "What do I need?", "Ingredient list?"],
+      "responses": ["I can help with what goes inside—just name the dish!", "Let me know which recipe you're curious about.", "Ingredients vary by recipe, of course. What are you looking at?", "Happy to help! Just specify the dish."]
+    },
+    {
+      "tag": "spice_level",
+      "patterns": ["Which is spiciest?", "Spice levels", "Mild recipes", "Heat level", "Hot options?", "Not too spicy?", "Low spice?", "High spice?"],
+      "responses": ["Some dishes bring heat, others stay mild—what are you in the mood for?", "We’ve got a range from mild to spicy—pick your vibe!", "Looking for something hot or gentle? I’ve got options.", "Let me know your spice tolerance and I’ll match you up."]
+    },
+    {
+      "tag": "protein_sources",
+      "patterns": ["High protein?", "Most protein?", "Protein-rich?", "Protein content", "Best for protein?", "Plant-based protein?", "Which is strongest?", "Good for energy?"],
+      "responses": ["Some of these are real powerhouses—interested in something hearty?", "Need protein? I’ve got some great options!", "Let me point you to the most filling choices.", "Looking for the most satisfying dish? I can help."]
+    },
+    {
+      "tag": "fallback",
+      "patterns": [],
+      "responses": ["Hmm, not sure I got that—ask me about one of our dishes: curry, chili, caramelized vegi, risotto, or dahl.", "Let’s stick to the main meals: curry, chili, caramelized vegi, risotto, dahl. Which one’s on your mind?", "I'm here to chat about those 5 dishes. Try saying one!", "Need help deciding? Ask about: curry, chili, vegi, risotto, or dahl."]
+    }
+  ]
+}

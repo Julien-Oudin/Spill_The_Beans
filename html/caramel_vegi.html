@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spill The Beans</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="icon" type="image/png" href="../img/flower.png">
+</head>
+
+<body>
+  <div class="recipe-page">
+    <header>
+      <nav class="recipe-navigation">
+        <a href="menu.html"><button class="nav-button"><img src="../img/svg/menu.svg" alt="Menu Icon" class="nav-icon">Menu</button></a>
+        <a href="home.html"><img src="../img/logo.png" alt="Spill The Beans Logo" class="logo" /></a>
+        <div class="navigation-right">
+          <a href="signin.html"><button class="login-button" id="login-button" onmouseover="this.innerHTML='Log Out'" onmouseout="this.innerHTML=localStorage.getItem('userName')"><img src="../img/svg/log.svg" alt="Login Icon" class="login-icon">Login</button></a>
+        </div>
+      </nav>
+    </header>
+    
+    <main class="recipe-content">
+      <div class="recipe-image">
+        <img src="../img/Plates/porc_caramel.png" alt="Porc_caramel" class="dish-image" />
+      </div>
+      
+      <section class="recipe-card">
+        <div class="recipe-details">
+          <h1>Caramelized Vegi</h1>
+          <p class="time-calories">60min - 550 kcal/per person</p>
+
+          <div class="servings">
+            <input type="button" id="decrease-servings" onclick="removeServings()" value="-">
+            <input type="text" value="1" id="servings-quantity">
+            <input type="button" id="increase-servings" onclick="addServings()" value="+">
+          </div>
+
+          <div class="ratings">
+            <p>dishes</p>
+            <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+            <p>difficulty</p>
+            <div class="bar"><div class="fill" style="width: 45%;"></div></div>
+            <p>price</p>
+            <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+          </div>
+          
+          <hr>
+          
+          <ul class="ingredients">
+            <li><span class="dot tofu"></span> <p class="servings-ingredients"></p> 00g Tofu</li>
+            <li><span class="dot carrots"></span> <p class="servings-ingredients"></p> 00g Carrots</li>
+            <li><span class="dot sugar"></span> <p class="servings-ingredients"></p> &nbspSugar</li>
+            <li><span class="dot fish-sauce"></span> <p class="servings-ingredients"></p> &nbspFish sauce</li>
+            <li><span class="dot oyster-sauce"></span> <p class="servings-ingredients"></p> &nbspOyster sauce</li>
+            <li><span class="dot rice-vinegar"></span> <p class="servings-ingredients"></p>tsp rice vinegar</li>
+            <li><span class="dot cumin"></span> <p class="servings-ingredients"></p> tsp cumin</li>
+            <li><span class="dot salt"></span> Salt</li>
+          </ul>
+          
+          <hr>
+          
+          <ol class="steps">
+            <li>Thinly slice the pork and mix it in a bowl with soy sauce, fish sauce, oyster sauce, pepper, and garlic. Let it marinate for at least 15 minutes.</li>
+            <li>In a large pan or wok, heat the sugar with 1 tbsp of water over medium heat. Let it melt and turn amber</li>
+            <li>Once it caramelizes, quickly add the marinated pork</li>
+            <li>Sear and coat the pork in the caramel. Cook until it’s browned and caramelized, about 5–7 minutes.</li>
+            <li>Push the pork to the side. Add a bit more oil if needed.</li>
+            <li>Stir-fry the onion, carrots, and broccoli first</li>
+            <li>Taste and adjust seasoning — more soy, sugar, or vinegar to balance sweet/savory/sour</li>
+            <li>Spoon over steamed rice</li>
+            <li> Enjoy ! </li>
+          </ol>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="double-bar">
+        <div class="footer-bar-first"></div>
+        <div class="footer-bar-second"></div>
+      </div>
+    </footer>
+  </div>
+  
+  <script src="../js/main_check.js"></script>
+</body>
+</html>
